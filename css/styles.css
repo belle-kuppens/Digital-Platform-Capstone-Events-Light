@@ -338,6 +338,26 @@ footer img {
 .footer .col-md-3 img.footer-logo {
   margin: 0 auto !important;
 }
+	
+	.footer .row {
+  justify-content: center !important;
+  text-align: center;
+}
+
+.footer .col-md-3 {
+  width: 100% !important;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto !important;
+}
 }
 
 @media (max-width: 992px) {
