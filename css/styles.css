@@ -246,35 +246,10 @@ footer img {
 /* TABLET + MOBILE */
 @media (max-width: 992px) {
 
-	#navbarSupportedContent {
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-.navbar .navbar-nav {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-.navbar form {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-	
   /* STACK ENTIRE NAVBAR VERTICALLY */
   .navbar .container-fluid {
     flex-direction: column;
     align-items: center;
-  }
-
-  /* COLLAPSED MENU CENTERED */
-  #navbarSupportedContent {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
   }
 
   /* LOGO ON TOP */
@@ -298,32 +273,6 @@ footer img {
   .dropdown-menu {
     text-align: center;
   }
-
-  /* SEARCH BAR CENTER + SMALLER BUTTON */
-/* SEARCH BAR CONTAINER CENTERED */
-.search-form {
-  margin-top: 1.5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* INPUT */
-.search-form .form-control {
-  width: 80%;
-  max-width: 280px;
-  text-align: center;
-}
-
-/* BUTTON */
-.search-btn {
-  width: auto;
-  padding: 5px 14px;   /* smaller button */
-  font-size: 0.85rem;
-  margin-top: 8px;
-  display: block;
-}
 
   /* REMOVE ANY LEFT/RIGHT ALIGNMENT HACKS */
   .navbar .navbar-nav,
