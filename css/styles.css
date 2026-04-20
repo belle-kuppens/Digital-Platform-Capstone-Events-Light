@@ -318,7 +318,7 @@ footer img {
 /* button smaller + centered */
 .search-btn {
   width: auto;
-  padding: 6px 16px;  /* makes it smaller */
+  padding: 6px 10px;  /* makes it smaller */
   font-size: 0.9rem;
   margin-top: 8px;
   display: block;
