@@ -294,8 +294,8 @@ footer img {
 }
 
 .search-form .search-btn {
-  padding: 10px 18px;
-  font-size: 1rem;
+  padding: 10px 18px !important;
+  font-size: 1rem !important;
 }
 
 /* SMALL MOBILE */
