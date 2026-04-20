@@ -237,41 +237,82 @@ footer img {
 }
 
 
-
 /* =========================
-   RESPONSIVE FIXES ONLY
+   RESPONSIVE NAVBAR STACK
+   (Laptop stays untouched)
 ========================= */
 
 /* TABLET + MOBILE */
 @media (max-width: 992px) {
 
-  /* NAVBAR: prevent layout breaking */
-  #navbarSupportedContent {
+  /* STACK ENTIRE NAVBAR VERTICALLY */
+  .navbar .container-fluid {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
+  /* COLLAPSED MENU CENTERED */
+  #navbarSupportedContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* LOGO ON TOP */
+  .navbar-brand {
+    margin-bottom: 1rem;
+  }
+
+  /* NAV ITEMS ORDER + STACK */
   .navbar-nav {
     flex-direction: column;
-    gap: 0.8rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* FIX "Questions & Contact" POSITION */
+  .questions-item {
+    margin-left: 0 !important;
+  }
+
+  /* DROPDOWNS CENTERED */
+  .dropdown-menu {
+    text-align: center;
+  }
+
+  /* SEARCH BAR LAST + CENTERED */
+  .navbar form {
+    margin-top: 1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar .form-control {
-    max-width: 100%;
     width: 100%;
+    max-width: 300px;
   }
 
   .search-btn {
     width: 100%;
-    margin-top: 5px;
+    max-width: 300px;
+    margin-top: 0.5rem;
   }
 
-  /* HERO: prevent text overflow */
+  /* REMOVE ANY LEFT/RIGHT ALIGNMENT HACKS */
+  .navbar .navbar-nav,
+  .navbar form {
+    align-items: center;
+  }
+
+  /* HERO FIX */
   .hero-content {
     padding: 0 20px;
   }
 
-  /* FOOTER: remove forced positioning */
+  /* FOOTER FIX */
   .right-content {
     transform: none;
     text-align: center;
@@ -279,7 +320,7 @@ footer img {
   }
 }
 
-/* SMALL MOBILE (phones) */
+/* SMALL MOBILE */
 @media (max-width: 576px) {
 
   .navbar .nav-link {
@@ -294,65 +335,7 @@ footer img {
     font-size: 1rem;
   }
 
-  .footer {
-    text-align: center;
-  }
-
   .social-icons i {
-    font-size: 26px; /* slightly bigger for touch */
+    font-size: 26px;
   }
-	
-	@media (max-width: 992px) {
-
-  /* Make navbar content stack vertically */
-  .navbar .container-fluid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Center everything inside collapse */
-  #navbarSupportedContent {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* Stack nav items vertically */
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  /* Make dropdown menus centered */
-  .dropdown-menu {
-    text-align: center;
-  }
-
-  /* Move logo to top and center it */
-  .navbar-brand {
-    margin-bottom: 1rem;
-  }
-
-  /* Push search bar to bottom */
-  .navbar form {
-    margin-top: 1.5rem;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar .form-control {
-    width: 70%;
-  }
-
-  .search-btn {
-    width: auto;
-  }
-
-  /* Ensure Questions & Contact stays visually last */
-  .questions-item {
-    margin-left: 0;
-  }
-}
 }
