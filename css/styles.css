@@ -301,4 +301,58 @@ footer img {
   .social-icons i {
     font-size: 26px; /* slightly bigger for touch */
   }
+	
+	@media (max-width: 992px) {
+
+  /* Make navbar content stack vertically */
+  .navbar .container-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Center everything inside collapse */
+  #navbarSupportedContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Stack nav items vertically */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Make dropdown menus centered */
+  .dropdown-menu {
+    text-align: center;
+  }
+
+  /* Move logo to top and center it */
+  .navbar-brand {
+    margin-bottom: 1rem;
+  }
+
+  /* Push search bar to bottom */
+  .navbar form {
+    margin-top: 1.5rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar .form-control {
+    width: 70%;
+  }
+
+  .search-btn {
+    width: auto;
+  }
+
+  /* Ensure Questions & Contact stays visually last */
+  .questions-item {
+    margin-left: 0;
+  }
+}
 }
