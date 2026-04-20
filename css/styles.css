@@ -1,11 +1,11 @@
 /* Importing a Google Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Changing the main font and background colour */
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: 'Roboto';
 	background-color: #fffcf8;
 }
 
@@ -15,23 +15,216 @@ header {
 	background-color: #000060;
 }
 
-/* Changing the background color for the navigation bar */
+/* Navigation Bar CSS */
 
 .navbar {
-	background-color: #fff0e0;
+	background-color: #000000;
+	
 }
 
-/* Effect on social media buttons */
-
-footer a:hover {
-	opacity: .5;
+.navbarfont{
+	font-family: 'Roboto';
 }
 
-/* Corporate navbar */
+.navbar .nav-link{
+	color: white;
+}
 
-#navbar-corporate a.active {
-	color: #800000;
-	font-weight: bold;
+.navbar .dropdown-toggle{
+	color: white;
+}
+
+.navbar .navbar-brand{
+	color: white;
+}
+
+.dropdown-menu {
+    background-color: #1f1f1f;
+    border: none;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: white;
+}
+
+.navbar .nav-link,
+.navbar .nav-link.dropdown-toggle {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #dddddd;
+}
+
+.navbar .nav-link.dropdown-toggle.show,
+.navbar .nav-link.dropdown-toggle:active {
+    color: white !important;
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.questions-item {
+    margin-left: -3rem;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+    font-size: 0.9rem;
+}
+
+.navbar-nav {
+    gap: 1.2rem;
+}
+
+.navbar .form-control {
+    max-width: 180px;
+}
+
+.navbar .form-control {
+    max-width: 200px;
+    height: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.navbar .navbar-nav,
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    background-color: #023CB1;
+    border: none;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #7CA6FD;
+}
+
+.navbar .form-control,
+.navbar .btn {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar {
+  position: relative;
+  z-index: 9999;
+  box-shadow: 0 15px 20px rgba(20, 62, 119, 0.35);
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:active {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 62, 119, 0.4);
+  border-radius: 10px;
+}
+
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* Hero section CSS */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+/* BACKGROUND IMAGE */
+.hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* TEXT ABOVE EVERYTHING */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Footer CSS */
+
+.footer{
+	background-color: #0B264C;
+}
+
+footer img {
+  max-height: 80px;
+  width: auto;
+  display: block;
+}
+
+.footer-tagline {
+  color: #7CA6FD;
+}
+.social-item:hover {
+  color: #0066FF;
+}
+
+.social-icons i {
+  font-size: 22px;
+	color: #7CA6FD;
+	display: inline-block;
+  margin: 0 5px;
+}
+
+.social-icons a:hover,
+.social-icons a:hover i {
+  color: #0066FF;
+}
+
+.right-content {
+  transform: translate(550px, 0px);
+}
+
+.email-link {
+  color: #7CA6FD; /* your custom color */
+  text-decoration: none; /* removes underline */
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #0066FF; /* hover color */
 }
 
 /* Hero Section shadow */

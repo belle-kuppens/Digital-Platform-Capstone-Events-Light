@@ -6,7 +6,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+	
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+	  
     <!-- Own Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -15,115 +17,172 @@
 
     <title>PRJ4 Base Group Template &mdash; Landing Page</title>
 
-    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
-    <!-- End of Google Analytics code -->
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- End of Google Fonts -->
 
   </head>
   <body class="h-100 d-flex flex-column">
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <!-- Begin of Navigation Bar -->
-   <nav class="navbarnavbar-expand-lg navbar-light navbar-font">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-    	<img src="images/logos/eventslightlogo1.png" width="100" alt="Events Light Logo 25 years">
-    		</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        	</button>
+    <!-- Navigation bar START-->
+    <nav class="navbar navbar-expand-lg navbar-light navbarfont custom-navbar sticky-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="images/logos/eventslightlogo1.png" width="150" alt="Events Light Logo 25 years">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		
-   		<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                General Information &amp; Onboarding
-              	</a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    	<li><a class="dropdown-item" href="introductionday.html">Introduction Day</a></li>
-        <li><a class="dropdown-item" href="codeofconduct.html">Code of Conduct</a></li>
-        <li><a class="dropdown-item" href="protocols.html">Protocols</a></li>
-		<li><a class="dropdown-item" href="trainingcourses.html">Training Courses</a></li>
-		<li><a class="dropdown-item" href="reportsickrecovered.html">Report Sick/Recovered &amp; Vacations</a></li>
-		<li><a class="dropdown-item" href="declarationsinvoicehours.html">Declarations &amp; Invoice Hours</a></li>
-    		</ul>
-            </li>
-		
-		<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Photo Directory
-              	</a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    	<li><a class="dropdown-item" href="teammainoffice.html">Team Main Office</a></li>
-        <li><a class="dropdown-item" href="teamfieldwork.html">Team Field Work</a></li>
-    		</ul>
-            </li>
-		
-		<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Specialisms
-              	</a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    	<li><a class="dropdown-item" href="technicalproducers.html">Technical Producers</a></li>
-        <li><a class="dropdown-item" href="stagemanagementinspicients.html">Stage Management &amp; Inspicients</a></li>
-		<li><a class="dropdown-item" href="lighting.html">Lighting</a></li>
-        <li><a class="dropdown-item" href="audio.html">Audio</a></li>
-		<li><a class="dropdown-item" href="showcalling.html">Showcalling</a></li>
-		<li><a class="dropdown-item" href="automation.html">Automation</a></li>
-        <li><a class="dropdown-item" href="rigging.html">Rigging</a></li>
-		<li><a class="dropdown-item" href="video.html">Video</a></li>
-        <li><a class="dropdown-item" href="transport.html">Transport</a></li>
-		<li><a class="dropdown-item" href="warehouse.html">Warehouse</a></li>
-        <li><a class="dropdown-item" href="backoffice.html">Back Office</a></li>
-    		</ul>
-            </li>
-		
-       	<li class="nav-item">
-        <a class="nav-link" href="productions.html">Productions</a>
-            </li>
-		
-	<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Materials
-              	</a>
-    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    	<li><a class="dropdown-item" href="reportdefects.html">Report Defects</a></li>
-        <li><a class="dropdown-item" href="planning.html">Planning</a></li>
-    		</ul>
-            </li>	
-		
-	<li class="nav-item">
-    <a class="nav-link" href="finalworkschedules.html">Final Work Schedules</a>
-    	</li>	
-		
-    <li class="nav-item">
-    <a class="nav-link" href="questionscontact.html">Questions &amp; Contact</a>
-    	</li>
-        		 
-	<form class="d-flex" role="search">
-    <input class="form-control me-2 search_bar" type="search" placeholder="Search......" aria-label="Search">
-		<button class="btn search_button_color btn-outline-success" type="submit">Search</button>
-    	</form>
-		</ul>
-       		</div>
-      			</div>
+
+      <!-- NAV LINKS -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            General Information &amp; Onboarding
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="introductionday.html">Introduction Day</a></li>
+            <li><a class="dropdown-item" href="codeofconduct.html">Code of Conduct</a></li>
+            <li><a class="dropdown-item" href="protocols.html">Protocols</a></li>
+            <li><a class="dropdown-item" href="trainingcourses.html">Training Courses</a></li>
+            <li><a class="dropdown-item" href="reportsickrecovered.html">Report Sick/Recovered &amp; Vacations</a></li>
+            <li><a class="dropdown-item" href="declarationsinvoicehours.html">Declarations &amp; Invoice Hours</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Photo Directory
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="teammainoffice.html">Team Main Office</a></li>
+            <li><a class="dropdown-item" href="teamfieldwork.html">Team Field Work</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Specialisms
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="technicalproducers.html">Technical Producers</a></li>
+            <li><a class="dropdown-item" href="stagemanagementinspicients.html">Stage Management &amp; Inspicients</a></li>
+            <li><a class="dropdown-item" href="lighting.html">Lighting</a></li>
+            <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+            <li><a class="dropdown-item" href="showcalling.html">Showcalling</a></li>
+            <li><a class="dropdown-item" href="automation.html">Automation</a></li>
+            <li><a class="dropdown-item" href="rigging.html">Rigging</a></li>
+            <li><a class="dropdown-item" href="video.html">Video</a></li>
+            <li><a class="dropdown-item" href="transport.html">Transport</a></li>
+            <li><a class="dropdown-item" href="warehouse.html">Warehouse</a></li>
+            <li><a class="dropdown-item" href="backoffice.html">Back Office</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="productions.html">Productions</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Materials
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="reportdefects.html">Report Defects</a></li>
+            <li><a class="dropdown-item" href="planning.html">Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="finalworkschedules.html">Final Work Schedules</a>
+        </li>
+
+        <li class="nav-item questions-item">
+          <a class="nav-link" href="questionscontact.html">Questions &amp; Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- SEARCH BAR (moved OUTSIDE ul for better layout) -->
+      <form class="d-flex ms-auto" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn search-btn" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
 </nav>
-    <!-- End of navigation bar -->
-    <!-- End of navigation bar -->
+    <!-- Navigation bar END -->
 
-    <!-- Start of main placeholder in landing page -->
-    <main class="h-100 d-flex flex-column justify-content-center align-items-center">
-      <img class="mb-4" src="images/2gether-transparent.png">
-      <h1>Events Light</h1>
-      <h5 class="fst-italic mb-5">Coming soon…</h5>
-      <div class="container text-center">
-        <p>This is a page you can use as a placeholder for your future website.</p>
-        <p>Once published (which should be at the end of week 5 of the project), it can be fully integrated within your marketing campaign.</p>
-        <p>You will then replace this landing page by a full website.</p>
-        <p>To build your website, you can start with the <a href="example.html">example</a> or pick and mix elements from the UX pattern pages of this website (check menu above).</p>
+    <!-- Hero section START -->
+   <main class="hero d-flex flex-column justify-content-center align-items-center text-center">
+
+  <!-- BACKGROUND IMAGE WRAPPER -->
+  <img class="hero-bg" src="images/backgrounds/hexagon.png" alt="Hero background">
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1>Events Light</h1>
+    <h5 class="fst-italic mb-5">Coming soon…</h5>
+
+    <div class="container">
+      <p>This is a page you can use as a placeholder for your future website.</p>
+      <p>Once published (which should be at the end of week 5 of the project), it can be fully integrated within your marketing campaign.</p>
+      <p>You will then replace this landing page by a full website.</p>
+      <p>To build your website, you can start with the <a href="example.html">example</a> or pick and mix elements from the UX pattern pages of this website (check menu above).</p>
+    </div>
+  </div>
+
+</main>
+    <!-- Hero section END -->
+	  
+<!-- Footer START -->
+<footer class="text-white mt-auto footer">
+  <div class="container py-4">
+    <div class="row align-items-center">
+      <!-- LEFT: IMAGE -->
+      <div class="col-md-3 text-center text-md-start">
+        <img src="images/logos/eventslightlogo1.png" alt="Events Light Logo 25 years" class="img-fluid mb-2" style="max-height: 300px;">
+        <p class="small mb-0 footer-tagline"> Where technology and experience come together </p>
+        <p class="small mb-0 footer-tagline">&nbsp;</p>
       </div>
-    </main>
-    <!-- End of main placeholder -->
+   
+      <!-- RIGHT: CONTACT -->
+      <div class="col-md-4 text-md-end text-center">
 
+  <div class="right-content">
+    <h5>Tips or suggestions for the platform?</h5>
+    <p><a href="mailto:prototype@email.com" class="email-link">
+  prototype@email.nl
+</a></p>
+	  
+    <h5 class="mt-3">Follow us and the work of your colleagues!</h5>
+
+    <div class="social-icons">
+  <a href="https://nl-nl.facebook.com/pages/category/Company/Events-Light-1041946072677847/"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/eventslight_bv/"><i class="bi bi-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/events-light"><i class="bi bi-linkedin"></i></a>
+
+</div>
+  </div>
+
+</div>
+	  
+    <hr class="bg-light">
+    <div class="text-center mt-3">
+      <small>&copy; 2026 Events Light</small>
+    </div>
+  </div>
+</footer>
+	  
+	<!-- Footer END -->  
+	  
   </body>
 </html>
