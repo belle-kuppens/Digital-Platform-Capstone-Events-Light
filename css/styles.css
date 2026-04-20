@@ -329,11 +329,11 @@ footer img {
 .search-btn {
   width: auto !important;
   padding: 6px 14px;
-  font-size: 0.85rem;
+  font-size: 0.60rem;
   margin-top: 8px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: center;
+  margin-right: center;
 }
 
   /* REMOVE ANY LEFT/RIGHT ALIGNMENT HACKS */
