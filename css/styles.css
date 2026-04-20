@@ -337,20 +337,7 @@ footer img {
   margin: 0 auto !important;
 }
 	
-	.footer .row {
-  justify-content: center !important;
-  text-align: center;
-}
 
-.footer .col-md-3 {
-  width: 100% !important;
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-
-  display: flex !important;
-  flex-direction: column;
-  align-items: center !important;
-}
 
 .footer-logo {
   display: block;
@@ -415,6 +402,18 @@ footer img {
 
   .footer-logo {
     margin: 0 auto;
+  }
+
+  .footer .row {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-top: 20px;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
   }
 
 }
