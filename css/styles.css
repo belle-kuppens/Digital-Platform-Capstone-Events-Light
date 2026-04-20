@@ -300,40 +300,29 @@ footer img {
   }
 
   /* SEARCH BAR CENTER + SMALLER BUTTON */
-.navbar form {
+/* SEARCH BAR CONTAINER CENTERED */
+.search-form {
   margin-top: 1.5rem;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* input stays centered */
-.navbar form {
-  margin-top: 1.5rem;
-  width: 100%;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center;
-}
-
-/* input field */
-.navbar .form-control {
-  width: 80% !important;
+/* INPUT */
+.search-form .form-control {
+  width: 80%;
   max-width: 280px;
   text-align: center;
 }
 
-/* button */
+/* BUTTON */
 .search-btn {
-  width: auto !important;
-  padding: 6px 14px;
-  font-size: 0.60rem;
+  width: auto;
+  padding: 5px 14px;   /* smaller button */
+  font-size: 0.85rem;
   margin-top: 8px;
   display: block;
-  margin-left: center;
-  margin-right: center;
 }
 
   /* REMOVE ANY LEFT/RIGHT ALIGNMENT HACKS */
