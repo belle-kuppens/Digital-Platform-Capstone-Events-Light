@@ -309,17 +309,27 @@ footer img {
 }
 
 /* input stays centered */
-.navbar .form-control {
+.navbar form {
+  margin-top: 1.5rem;
   width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center;
+}
+
+/* input field */
+.navbar .form-control {
+  width: 80% !important;
   max-width: 280px;
   text-align: center;
 }
 
-/* button smaller + centered */
+/* button */
 .search-btn {
-  width: auto;
-  padding: 4px 5px;  /* makes it smaller */
-  font-size: 0.9rem;
+  width: auto !important;
+  padding: 6px 14px;
+  font-size: 0.85rem;
   margin-top: 8px;
   display: block;
   margin-left: auto;
