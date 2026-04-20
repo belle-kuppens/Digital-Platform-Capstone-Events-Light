@@ -402,5 +402,19 @@ footer img {
     font-size: 0.8rem !important;
     line-height: 1.3;
   }
+}
+
+@media (max-width: 768px) {
+
+  .footer .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
 
 }
