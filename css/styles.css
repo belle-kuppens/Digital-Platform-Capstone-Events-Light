@@ -311,11 +311,11 @@ footer img {
   }
 	
 	.footer img {
-  max-height: 120px !important;
+  max-height: 80px !important;
 }
 
 .footer .small {
-  font-size: 0.75rem;
+  font-size: 0.4rem;
 }
 }
 
