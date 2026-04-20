@@ -310,12 +310,22 @@ footer img {
     font-size: 26px;
   }
 	
-	.footer img {
-  max-height: 80px !important;
+	/* FOOTER MOBILE SIZING */
+.footer img {
+  max-height: 90px; /* smaller logo on phone */
 }
 
-.footer .small {
-  font-size: 0.4rem;
+.footer h5 {
+  font-size: 0.6rem; /* smaller headings */
+}
+
+.footer p,
+.footer small {
+  font-size: 0.4rem; /* smaller text */
+}
+
+.social-icons i {
+  font-size: 20px; /* slightly smaller icons */
 }
 }
 
