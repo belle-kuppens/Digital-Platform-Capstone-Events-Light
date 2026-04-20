@@ -144,12 +144,6 @@ header {
   border: none;
 }
 
-
-/* Replace Bootstrap hamburger icon with white SVG */
-.navbar-light {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 /* Hero section CSS */
 .hero {
   min-height: 100vh;
@@ -250,11 +244,17 @@ footer img {
   align-items: flex-end;
 }
 
-/* Mobile fix: center everything */
 @media (max-width: 768px) {
   .footer .col-md-4 {
     align-items: center !important;
-    text-align: center;
+    text-align: center !important;
+  }
+
+  .footer .col-md-4 h5,
+  .footer .col-md-4 p,
+  .footer .social-icons {
+    text-align: center !important;
+    justify-content: center !important;
   }
 }
 
@@ -463,9 +463,6 @@ footer img {
 }
 
 /* FORCE WHITE HAMBURGER ICON (Bootstrap override) */
-.navbar-light {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
 
 .navbar-toggler {
   border: none !important;
