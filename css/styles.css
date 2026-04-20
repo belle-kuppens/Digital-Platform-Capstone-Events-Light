@@ -238,11 +238,6 @@ footer img {
 }
 
 /* Desktop: keep right alignment */
-.footer .col-md-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 @media (max-width: 768px) {
   .footer .col-md-4 {
