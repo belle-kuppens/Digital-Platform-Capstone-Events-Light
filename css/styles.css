@@ -243,10 +243,19 @@ footer img {
   max-height: 300px;
 }
 
+/* Desktop: keep right alignment */
 .footer .col-md-4 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+/* Mobile fix: center everything */
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    align-items: center !important;
+    text-align: center;
+  }
 }
 
 /* =========================
