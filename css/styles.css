@@ -140,8 +140,35 @@ header {
   z-index: 9999;
 }
 
+.navbar-toggler {
+  border: none; /* optional: removes border box */
+}
+
 .navbar-toggler-icon {
-  filter: invert(60%) sepia(100%) saturate(500%) hue-rotate(190deg);
+  background-image: none; /* remove Bootstrap default icon */
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+}
+
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+
+.navbar-toggler-icon::after {
+  top: 7px;
 }
 
 /* Hero section CSS */
