@@ -140,7 +140,9 @@ header {
   z-index: 9999;
 }
 
-
+.navbar-toggler-icon {
+  filter: invert(60%) sepia(100%) saturate(500%) hue-rotate(190deg);
+}
 
 /* Hero section CSS */
 .hero {
