@@ -74,7 +74,7 @@ header {
 }
 
 .questions-item {
-    margin-left: -3rem;
+    margin-left: -2rem;
 }
 
 .navbar .nav-link,
@@ -178,8 +178,6 @@ header {
   z-index: 2;
 }
 
-
-
 /* Hero Section shadow */
 
 .white-shadow {
@@ -188,6 +186,9 @@ header {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+
+
 
 /* Footer CSS */
 
@@ -220,10 +221,6 @@ footer img {
   color: #0066FF;
 }
 
-.right-content {
-  text-align: right;
-}
-
 .email-link {
   color: #7CA6FD; /* your custom color */
   text-decoration: none; /* removes underline */
@@ -238,11 +235,10 @@ footer img {
   max-height: 300px;
 }
 
-
-.footer .row {
+.footer .col-md-4 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* =========================
@@ -422,10 +418,29 @@ footer img {
     justify-content: center;
   }
 
-	@media (max-width: 768px) {
+}
+	
+
+@media (max-width: 768px) {
+
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .col-md-3,
+  .footer .col-md-4 {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
   .right-content {
     text-align: center;
   }
-}
-	
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
 }
