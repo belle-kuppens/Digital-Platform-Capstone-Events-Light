@@ -235,3 +235,70 @@ footer img {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+
+
+/* =========================
+   RESPONSIVE FIXES ONLY
+========================= */
+
+/* TABLET + MOBILE */
+@media (max-width: 992px) {
+
+  /* NAVBAR: prevent layout breaking */
+  #navbarSupportedContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .navbar .form-control {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* HERO: prevent text overflow */
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  /* FOOTER: remove forced positioning */
+  .right-content {
+    transform: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* SMALL MOBILE (phones) */
+@media (max-width: 576px) {
+
+  .navbar .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h5 {
+    font-size: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .social-icons i {
+    font-size: 26px; /* slightly bigger for touch */
+  }
+}
