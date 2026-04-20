@@ -469,3 +469,30 @@ footer img {
 .navbar-toggler {
   border: none !important;
 }
+
+@media (max-width: 768px) {
+
+  .footer .row {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer .col-md-4 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .footer .col-md-4 * {
+    text-align: center !important;
+  }
+
+  .footer .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+}
