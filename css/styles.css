@@ -517,16 +517,20 @@ footer img {
   }
 }
 
+
 @media (max-width: 768px) {
 
-  .search-form .form-control {
-    height: 48px !important;
-    font-size: 1rem;
+  .search-form .search-btn {
+    height: 52px !important;
+    min-height: 52px !important;
+    padding: 0 22px !important;
+    font-size: 1rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  .search-form .search-btn {
-    height: 48px !important;
-    padding: 0 18px !important;
-    font-size: 1rem !important;
+  .search-form .form-control {
+    height: 52px !important;
   }
 }
