@@ -387,3 +387,27 @@ footer img {
   }
 
 }
+
+
+/* =========================
+   FOOTER MOBILE FIX ONLY
+========================= */
+@media (max-width: 576px) {
+
+  /* make logo smaller ONLY on mobile */
+  .footer-logo {
+    max-height: 120px !important;
+  }
+
+  /* make footer text smaller ONLY on mobile */
+  .footer h5 {
+    font-size: 0.95rem !important;
+  }
+
+  .footer p,
+  .footer small {
+    font-size: 0.8rem !important;
+    line-height: 1.3;
+  }
+
+}
