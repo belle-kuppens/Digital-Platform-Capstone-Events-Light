@@ -293,6 +293,11 @@ footer img {
   }
 }
 
+.search-form .search-btn {
+  padding: 10px 18px;
+  font-size: 1rem;
+}
+
 /* SMALL MOBILE */
 @media (max-width: 576px) {
 
