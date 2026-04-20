@@ -299,25 +299,32 @@ footer img {
     text-align: center;
   }
 
-  /* SEARCH BAR LAST + CENTERED */
-  .navbar form {
-    margin-top: 1.5rem;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  /* SEARCH BAR CENTER + SMALLER BUTTON */
+.navbar form {
+  margin-top: 1.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .navbar .form-control {
-    width: 100%;
-    max-width: 300px;
-  }
+/* input stays centered */
+.navbar .form-control {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
 
-  .search-btn {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 0.5rem;
-  }
+/* button smaller + centered */
+.search-btn {
+  width: auto;
+  padding: 6px 16px;  /* makes it smaller */
+  font-size: 0.9rem;
+  margin-top: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   /* REMOVE ANY LEFT/RIGHT ALIGNMENT HACKS */
   .navbar .navbar-nav,
