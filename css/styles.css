@@ -239,14 +239,6 @@ footer img {
 
 @media (max-width: 768px) {
 
-  .footer .col-md-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
   .footer .social-icons {
     display: flex;
     justify-content: center;
@@ -259,6 +251,18 @@ footer img {
     text-align: center;
   }
 }
+
+.footer-right {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-right {
+    text-align: center !important;
+  }
+}
+
+
 
 /* =========================
    RESPONSIVE NAVBAR STACK
@@ -425,9 +429,6 @@ footer img {
     margin: 0 auto;
   }
 
-  .footer .row {
-    text-align: center;
-  }
 
   .footer .col-md-4 {
     margin-top: 20px;
@@ -486,13 +487,32 @@ footer img {
     text-align: center !important;
   }
 
-  .footer .col-md-4 * {
-    text-align: center !important;
-  }
 
   .footer .social-icons {
     display: flex !important;
     justify-content: center !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer .col-md-4 {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer .col-md-4 h5,
+  .footer .col-md-4 p,
+  .footer .col-md-4 a {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .footer .social-icons {
+    justify-content: center !important;
+    display: flex !important;
     width: 100%;
   }
 }
