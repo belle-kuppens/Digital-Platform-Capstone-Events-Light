@@ -1,32 +1,17 @@
-# prj4-group-template
+# Digital Platform Capstone Project - Events Light
 
-### A template for creating a group website
+### Made by Belle Kuppens
+This platform is lightly adapted from the BUas PRJ4 Brand Development Group Website Template
 
-This one page example uses the following patterns:
-- A navigation bar
-- A hero section with two buttons and a gradient background
-- A carousel with three images
-- A grid with cards and placeholder images
-- A footer
-- Some CSS customization: navigation bar, hero section and body have their own background color
-- Google Fonts: <https://fonts.google.com/specimen/Raleway>
+### About the platform
+The platform focuses on layout and structure instead of content. Each piece of content is replaced with an ID that represents the piece of content that would be placed in that position on the platform. For example where the code of conduct should be added, there is:
+'ID-1-Code-of-Conduct'. This preserves the privacy of Events Light and its employees and provides room for company delegates to add the right content. In the appendix of the design document there is a table that describes each ID code. For example in this case there would be an explanation of 'Attach the code of conduct document'.
 
-### See it at work!
+Furthermore, any names/emails/phone numbers or other personal contact info is replaced with a placeholder such as 'Name' 'prototype@email.nl' or '+31 6 12345678'
 
-The project is published at <https://buas-media-interactive.github.io/prj4-group-template> **PLEASE REPLACE THIS ADDRESS WITH YOUR PROJECT'S URL WHEN PUBLISHING YOUR WEBSITE**
+### See the platform!
 
-### Create your own group website
+The project is published at <https://belle-kuppens.github.io/Digital-Platform-Capstone-Events-Light/>
 
-Click on [Use this template](https://github.com/buas-media-interactive/prj4-group-template/generate) to create a new repository for your group website.
-
-Please check the comments in [index.html](https://github.com/buas-media-interactive/prj4-group-template/blob/main/index.html) and [css/styles.css](https://github.com/buas-media-interactive/prj4-group-template/blob/css/styles.css) as well as the [Bootstrap 5.1 Documentation](https://getbootstrap.com/docs/5.1/) for help with customizing the template.
-
-### Check the requirements before handing in
-
-Please double-check the requirements in the course's [Brightspace environment](https://study.buas.nl/d2l/home/25973) and/or in the [Production guide](https://buas-media-interactive.github.io/prj4-guide/checklist-group.html)
-
-### Image credits
-
-Social media icons: FontAwesome - <https://fontawesome.com/> - Licensed under Creative Commons Attribution 4.0 (CC-BY-4.0)
-
-Photos of the campus were taken by Raphaël Velt © [Breda University of Applied Sciences](https://www.buas.nl/)
+### Design Choices
+All design choices are justified and explained in detail in the Design Document: CB_2526_Capstone_DesignDocument_EventsLight
