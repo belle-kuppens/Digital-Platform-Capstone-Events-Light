@@ -191,14 +191,12 @@ header {
   font-weight: 700;
 }
 
-.hero-title h1::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 3px;
-  left: 0;
-  color: #1800ad;
-  z-index: -1;
-	transform: translateX(3px);
+.hero-title h1 {
+  font-family: "Roboto Slab";
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 3px 3px 0 #1800ad;
 }
 
 .hero-subtitle{
