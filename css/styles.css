@@ -154,7 +154,7 @@ header {
 /* BACKGROUND IMAGE */
 .hero-bg {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   
@@ -163,15 +163,6 @@ header {
   object-fit: cover;
 
   z-index: 0;
-}
-
-/* DARK OVERLAY FOR READABILITY */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 /* TEXT ABOVE EVERYTHING */
@@ -189,8 +180,33 @@ header {
 		0 0 .5em white;
 }
 
+.hero-title h1{
+	font-family: "Roboto Slab";
+	font-size: 5rem;
+}
 
+.hero-title h1 {
+  position: relative;
+  color: white;
+  font-weight: 700;
+}
 
+.hero-title h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 3px;
+  left: 0;
+  color: #1800ad;
+  z-index: -1;
+	transform: translateX(3px);
+}
+
+.hero-subtitle{
+	font-family: "Roboto";
+	font-weight: 350;
+	font-size: 1.5rem;
+	
+}
 
 /* Footer CSS */
 
@@ -199,7 +215,7 @@ header {
 }
 
 footer img {
-  max-height: 80px;
+  max-height: 300px;
   width: auto;
   display: block;
 }
