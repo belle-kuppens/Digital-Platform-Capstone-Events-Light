@@ -81,9 +81,6 @@ header {
     gap: 2rem;
 }
 
-.questions-item {
-    margin-left: -2rem;
-}
 
 .navbar .nav-link,
 .navbar .dropdown-toggle {
@@ -387,18 +384,6 @@ header {
   display: none;
 }
 
-/* Mobile override */
-@media (max-width: 768px) {
-  #newsCarousel {
-    display: none;
-  }
-
-  #newsCarouselMobile {
-    display: block;
-  }
-}
-
-
 /* Footer CSS */
 
 .footer{
@@ -505,10 +490,6 @@ footer img {
     gap: 1rem;
   }
 
-  /* FIX "Questions & Contact" POSITION */
-  .questions-item {
-    margin-left: 0 !important;
-  }
 
   /* DROPDOWNS CENTERED */
   .dropdown-menu {
@@ -555,9 +536,8 @@ footer img {
 
   .social-icons i {
     font-size: 26px;
-	  margin-left: 0px;
   }
-/*-------------------------------*/
+
 .footer-logo {
   max-height: 120px;
 }
@@ -596,17 +576,6 @@ footer img {
 
 }
 
-@media (max-width: 576px) {
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2px; /* <-- control spacing here */
-  }
-
-  .social-icons a {
-    margin: 0 !important; /* remove conflicting spacing */
-  }
-}
 
 @media (max-width: 992px) {
 
@@ -633,7 +602,6 @@ footer img {
     width: 100%;
     margin-top: 1rem;
   }
-
 }
 
 /* FOOTER MOBILE FIX (covers ALL phones) */
@@ -672,7 +640,7 @@ footer img {
     margin-top: 20px;
   }
 
-  .footer .social-icons {
+  .footer {
     justify-content: center;
   }
 
@@ -697,10 +665,6 @@ footer img {
     text-align: center;
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 /* FORCE WHITE HAMBURGER ICON (Bootstrap override) */
@@ -726,7 +690,7 @@ footer img {
   }
 
 
-  .footer .social-icons {
+  .footer {
     display: flex !important;
     justify-content: center !important;
     width: 100%;
@@ -748,7 +712,7 @@ footer img {
     width: 100%;
   }
 
-  .footer .social-icons {
+  .footer {
     justify-content: center !important;
     display: flex !important;
     width: 100%;
@@ -776,6 +740,11 @@ footer img {
     align-items: center !important;
     justify-content: center !important;
   }
+	
+	.hero-title h1 {
+  font-size: 4rem !important;
+  line-height: 1.2;
+}
 }
 
 
@@ -792,23 +761,36 @@ footer img {
   .hero-subtitle {
     font-size: 1rem !important;
   }
+	
+	/* Make cards smaller WITHOUT breaking layout */
+.news-card img {
+  height: 180px;      /* smaller image */
+  padding: 10px;      /* less white space */
+}
 
-  /* CAROUSEL: FORCE SINGLE CARD */
-  .carousel-item .row {
-    flex-direction: column !important;
-  }
+/* Reduce text size */
+.news-card .card-title {
+  font-size: 1.2rem;
+}
 
-  .carousel-item .col-md-4 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-  }
+.news-card .card-text {
+  font-size: 0.8rem;
+}
 
-  /* MAKE CARD SMALLER */
-  .news-card {
-    transform: scale(0.85);
-    margin: 0 auto 1rem auto;
-  }
+.news-date {
+  font-size: 0.7rem;
+  padding: 6px;
+}
+
+/* Reduce spacing between cards */
+.carousel-item .col-md-4 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.carousel-item .row {
+  gap: 6px !important;
+}
 
   /* ARROWS */
   #newsCarousel .carousel-control-prev {
@@ -824,4 +806,33 @@ footer img {
     bottom: -15px !important;
   }
 
+  /* Make the image smaller (biggest visual impact) */
+  .news-card img {
+    height: 160px;      /* was 300px */
+    padding: 8px;       /* less white border */
+  }
+
+  /* Reduce overall card “feel” via content */
+  .news-card .card-body {
+    padding: 10px;
+  }
+
+  /* Smaller title */
+  .news-card .card-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  /* Smaller text */
+  .news-card .card-text {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  /* Smaller footer/date */
+  .news-date {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+  }
 }
+
