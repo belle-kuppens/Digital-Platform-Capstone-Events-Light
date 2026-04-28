@@ -183,30 +183,201 @@ header {
 
 .hero-title h1 {
   position: relative;
-  color: white;
-  font-weight: 700;
+  z-index: 1;
 }
 
 .hero-title h1::after {
   content: attr(data-text);
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 0;
   color: #1800ad;
+  transform: translateX(4px);
   z-index: -1;
-	transform: translateX(3px);
 }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+}
+
+/* BLUE SHADOW / OFFSET TEXT */
 
 .hero-subtitle{
 	font-family: "Roboto";
 	font-weight: 350;
 	font-size: 1.5rem;
-	
 }
+
+.hero-section {
+  height: 100vh;
+  background: url("../images/home/flightcases.png") center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+
+
+
+
+
+
 
 /* News Carousel */
 .news-carousel {
-  background-color: #f8f9fa;
+  background-color: #023cb1;
+}
+
+.news-title{
+	font-family: "Roboto";
+	font-size: 3rem;
+	color: #ffffff;
+}
+
+.line-css{
+  border: none;              
+  height: 2px;               
+  background-color: #ffffff; 
+  opacity: 1;                
+  width: 100%;
+	margin-top: 30px;
+}
+
+.title-shadow {
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.news-title {
+  margin-bottom: 50px;
+}
+
+.line-css {
+  margin-bottom: 40px;
+}
+
+.news-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* CUSTOM CAROUSEL ARROWS */
+#newsCarousel .carousel-control-prev-icon,
+#newsCarousel .carousel-control-next-icon {
+  background-image: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* LEFT ARROW */
+#newsCarousel .carousel-control-prev-icon {
+  border: solid #7CA6FD;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  transform: rotate(135deg);
+}
+
+/* RIGHT ARROW */
+#newsCarousel .carousel-control-next-icon {
+  border: solid #7CA6FD;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+#newsCarousel .carousel-control-prev,
+#newsCarousel .carousel-control-next {
+  opacity: 1 !important;
+}
+
+#newsCarousel .carousel-control-prev:hover,
+#newsCarousel .carousel-control-next:hover,
+#newsCarousel .carousel-control-prev:focus,
+#newsCarousel .carousel-control-next:focus {
+  opacity: 1 !important;
+}
+
+.news-card img {
+  height: 300px;
+	width: 100%;
+  object-fit: cover;
+  padding: 20px;            
+  background-color: white;  
+}
+
+.carousel-item .row {
+  display: flex;
+  align-items: stretch;
+}
+
+.carousel-item .col-md-4 {
+  display: flex;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.news-card .card-body {
+  flex-grow: 1;
+}
+
+
+/* Card title styling */
+.news-card .card-title {
+  font-family: "Roboto Slab";
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Card paragraph text */
+.news-card .card-text {
+  font-family: "Roboto";
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* Card footer date */
+.news-date {
+  background-color: #7CA6FD;
+  color: #000000;
+
+  padding: 10px 10px;
+  border-radius: 6px;
+
+  font-family: "Roboto";
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+#newsCarousel .carousel-control-prev {
+  left: -127px;
+}
+
+#newsCarousel .carousel-control-next {
+  right: -127px;
+}
+
+#newsCarousel .carousel-indicators {
+  bottom: -30px;
+}
+
+#newsCarousel {
+  padding-bottom: 40px;
 }
 
 
