@@ -187,7 +187,7 @@ header {
   font-weight: 700;
   line-height: 1.1;
   color: white;
-  text-shadow: 4px 4px 0 #1800ad;
+  text-shadow: 6px 5px 0 #1800ad;
 }
 
 .hero-title h1 {
@@ -227,7 +227,7 @@ header {
 
 /* News Carousel */
 .news-carousel {
-  background-color: #023cb1;
+  background-color: #143E77;
 }
 
 .news-title{
