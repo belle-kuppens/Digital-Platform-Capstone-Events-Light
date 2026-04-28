@@ -730,3 +730,36 @@ footer img {
     justify-content: center !important;
   }
 }
+
+
+/* =========================
+   MOBILE HERO + CAROUSEL FIX (iPhone)
+========================= */
+@media (max-width: 576px) {
+
+  /* HERO TEXT SMALLER */
+  .hero-title h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+
+  /* CAROUSEL: ONE CARD PER SLIDE */
+  .carousel-item .row {
+    flex-direction: column;
+  }
+
+  .carousel-item .col-md-4 {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* optional: spacing between cards if needed */
+  .news-card {
+    margin-bottom: 1rem;
+  }
+}
