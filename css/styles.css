@@ -573,7 +573,11 @@ footer img {
     font-size: 5rem !important;
     line-height: 1.2;
 }
-
+	
+	.news-card {
+		margin: 40px
+	}
+	
 }
 
 
@@ -762,12 +766,6 @@ footer img {
     font-size: 1rem !important;
   }
 	
-	/* Make cards smaller WITHOUT breaking layout */
-.news-card img {
-  height: 180px;      /* smaller image */
-  padding: 10px;      /* less white space */
-}
-
 /* Reduce text size */
 .news-card .card-title {
   font-size: 1.2rem;
@@ -808,8 +806,8 @@ footer img {
 
   /* Make the image smaller (biggest visual impact) */
   .news-card img {
-    height: 160px;      /* was 300px */
-    padding: 8px;       /* less white border */
+    height: 120px;      
+    padding: 8px;
   }
 
   /* Reduce overall card “feel” via content */
@@ -819,20 +817,50 @@ footer img {
 
   /* Smaller title */
   .news-card .card-title {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     line-height: 1.2;
   }
 
   /* Smaller text */
   .news-card .card-text {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     line-height: 1.4;
   }
 
   /* Smaller footer/date */
   .news-date {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     padding: 5px 8px;
   }
+	
+
+  /* Make each column behave like a centered small card */
+  .carousel-item .col-md-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ACTUAL card size control */
+  .news-card {
+    width: 100%;          /* THIS is the key change */
+    max-width: 300px;
+	  max-height: 250px;/* keeps it small on iPhone */
+    margin: 10px auto;   /* centers it properly */
+    transform: none;     /* remove scaling if you used it earlier */
+  }
+
+  /* Reduce internal spacing */
+  .news-card .card-body {
+    padding: 10px;
+  }
+
+  /* Optional: reduce image height more */
+  .news-card img {
+    height: 120px;
+    padding: 6px;
+  }
+
 }
 
