@@ -9,6 +9,14 @@ body {
 	background-color: #000000;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* Changing the background colour for the header */
 
 header {
@@ -176,9 +184,13 @@ header {
 		0 0 .5em white;
 }
 
-.hero-title h1{
-	font-family: "Roboto Slab";
-	font-size: 5rem;
+.hero-title h1 {
+  font-family: "Roboto Slab";
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  text-shadow: 4px 4px 0 #1800ad;
 }
 
 .hero-title h1 {
@@ -186,14 +198,8 @@ header {
   z-index: 1;
 }
 
-.hero-title h1::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 4px;
-  left: 0;
-  color: #1800ad;
-  transform: translateX(4px);
-  z-index: -1;
+.hero-title h1 {
+  display: inline-block;
 }
 
 .hero-content {
@@ -201,19 +207,11 @@ header {
   z-index: 2;
 }
 
-.hero-content h1 {
-  position: relative;
-  display: inline-block;
-  color: white;
-  font-weight: 700;
-}
-
 /* BLUE SHADOW / OFFSET TEXT */
 
-.hero-subtitle{
-	font-family: "Roboto";
-	font-weight: 350;
-	font-size: 1.5rem;
+.hero-subtitle {
+  font-family: "Roboto";
+  font-weight: 350;
 }
 
 .hero-section {
@@ -380,7 +378,25 @@ header {
   padding-bottom: 40px;
 }
 
+/* Desktop carousel visible only on md+ */
+#newsCarousel {
+  display: block;
+}
 
+#newsCarouselMobile {
+  display: none;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  #newsCarousel {
+    display: none;
+  }
+
+  #newsCarouselMobile {
+    display: block;
+  }
+}
 
 
 /* Footer CSS */
@@ -406,7 +422,7 @@ footer img {
   font-size: 22px;
 	color: #7CA6FD;
 	display: inline-block;
-  margin: 0 5px;
+  margin: 0 3px;
 }
 
 .social-icons a:hover,
@@ -427,6 +443,14 @@ footer img {
 .footer-logo {
   max-height: 300px;
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
 
@@ -524,12 +548,18 @@ footer img {
     font-size: 1rem;
   }
 
+
+  .hero-title h1::after {
+    transform: translate(2px, 2px);
+  }
+
   .social-icons i {
     font-size: 26px;
+	  margin-left: 0px;
   }
-	
+/*-------------------------------*/
 .footer-logo {
-  max-height: 100px;
+  max-height: 120px;
 }
 
 	.footer h5 {
@@ -554,11 +584,28 @@ footer img {
 }
 	
 
-
 .footer-logo {
   display: block;
   margin: 0 auto !important;
 }
+
+  .hero-title h1 {
+    font-size: 5rem !important;
+    line-height: 1.2;
+}
+
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2px; /* <-- control spacing here */
+  }
+
+  .social-icons a {
+    margin: 0 !important; /* remove conflicting spacing */
+  }
 }
 
 @media (max-width: 992px) {
@@ -737,29 +784,44 @@ footer img {
 ========================= */
 @media (max-width: 576px) {
 
-  /* HERO TEXT SMALLER */
+  /* HERO TEXT */
   .hero-title h1 {
-    font-size: 2rem !important;
-    line-height: 1.2;
+    font-size: 2.2rem !important;
   }
 
   .hero-subtitle {
     font-size: 1rem !important;
   }
 
-  /* CAROUSEL: ONE CARD PER SLIDE */
+  /* CAROUSEL: FORCE SINGLE CARD */
   .carousel-item .row {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .carousel-item .col-md-4 {
-    width: 100% !important;
-    max-width: 100%;
-    flex: 0 0 100%;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
   }
 
-  /* optional: spacing between cards if needed */
+  /* MAKE CARD SMALLER */
   .news-card {
-    margin-bottom: 1rem;
+    transform: scale(0.85);
+    margin: 0 auto 1rem auto;
   }
+
+  /* ARROWS */
+  #newsCarousel .carousel-control-prev {
+    left: -10px !important;
+  }
+
+  #newsCarousel .carousel-control-next {
+    right: -10px !important;
+  }
+
+  /* INDICATORS */
+  #newsCarousel .carousel-indicators {
+    bottom: -15px !important;
+  }
+
 }
