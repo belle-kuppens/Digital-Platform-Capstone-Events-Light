@@ -531,7 +531,15 @@ footer img {
 }
 
 
+.footer-right {
+  text-align: right;
+}
 
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}
 
 
 
@@ -1010,3 +1018,43 @@ footer img {
 
 }
 
+/*================================================================= BEGIN OF INTRODUCTION DAY PAGE =========*/
+
+.page-container-intro {
+  background-color: #000;
+  width: 90%;         /* makes it wider relative to screen */
+  max-width: 1400px;  /* controls max size on big screens */
+  min-height: 750px;  /* makes it taller */
+	min-width: 1250px;
+
+  margin: 60px auto;  /* centers it */
+
+  padding: 60px;      /* safe spacing for text */
+
+  color: white;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .page-container-intro {
+    width: 92% !important;
+    max-width: 900px !important;
+    min-height: 1100px;
+	  min-width: 750px;
+
+    padding: 40px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container-intro {
+    width: 95%;
+    padding: 25px;
+    margin: 20px auto;
+    min-height: 800px;
+		min-width: 350px;
+    border-radius: 8px;
+  }
+}
