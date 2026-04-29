@@ -1040,6 +1040,7 @@ footer img {
 	font-family: "Roboto Slab";
 	color: white;
   text-shadow: 0 0 8px #7CA6FD, 0 0 20px #023cb1;
+	margin-top: 30px;
 }
 
 .page-container-intro h4 {
@@ -1159,6 +1160,10 @@ margin-bottom: 50px;
   margin-left: 0;
 	font-size: 0.7rem;
 }
+	.page-container-intro h4 {
+	font-family: "Roboto Slab";
+	font-size: 1.2rem;
+}
 }
 
 @media (max-width: 576px) {
@@ -1224,5 +1229,14 @@ margin-bottom: 50px;
 .last-image-grid {
   margin-bottom: 30px;
 }
-
+.page-container-intro h4 {
+	font-family: "Roboto Slab";
+	font-size: 0.8rem;
+}
+	.summary-text {
+		font-size: 0.7rem;
+	}
+	.video-placeholder {
+  margin-top: 5px;
+}
 }
