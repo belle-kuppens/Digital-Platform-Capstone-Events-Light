@@ -1279,3 +1279,25 @@ color: black;
   background-color: #0066FF;
 color: white;
 }
+
+/*=================================================BEGIN PROTOCOLS PAGE ===========================*/
+
+.download-button-row {
+  position: relative; /* 👈 anchor for absolute positioning */
+}
+
+/* Position text under the title */
+.disclaimer-safety-protocols {
+  position: absolute;
+  left: 0;
+  top: 100%;         /* places it right under the row */
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+/* Give space so it doesn't overlap next content */
+.download-button-row {
+  margin-bottom: 30px;
+}
