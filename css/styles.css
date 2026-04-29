@@ -1110,13 +1110,29 @@ margin-bottom: 50px;
 	max-height: 500px;
   border-radius: 5px;
   display: block;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .video-placeholder {
   display: flex;
 }
 
+.video-btn-low {
+  margin-left: 0px;       /* pushes ONLY the button right */
+  background-color: #023cb1;
+  color: white;
+  padding: 6px 12px;       /* smaller, normal button */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;   /* prevents stretching */
+	margin-bottom: 30px;
+}
+
+.video-btn-low:hover {
+  background-color: #7CA6FD;
+color: black;
+}
 
 @media (max-width: 992px) {
   .page-container-intro {
@@ -1239,4 +1255,27 @@ margin-bottom: 50px;
 	.video-placeholder {
   margin-top: 5px;
 }
+	.video-btn-low{
+		font-size: 0.6rem;
+	}
+}
+
+/*==================================================BEGIN CODE OF CONDUCT PAGE===================*/
+
+.page-container-blue {
+  background-color: #143e77;
+}
+
+.page-container-blue h3{
+	text-shadow: 0 0 3px #143E77, 0 0 5px #000000;
+}
+
+.download-btn-lightblue{
+	background-color: #7CA6FD;
+	color: black;
+}
+
+.download-btn-lightblue:hover {
+  background-color: #0066FF;
+color: white;
 }
