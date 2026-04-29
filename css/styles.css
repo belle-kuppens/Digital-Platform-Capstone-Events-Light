@@ -706,7 +706,6 @@ footer img {
     margin-left: auto;
     margin-right: auto;
 	  margin-bottom: 10px;
-
   }
 .page-links-btn {
   display: inline-block;
@@ -1022,19 +1021,57 @@ footer img {
 
 .page-container-intro {
   background-color: #000;
-  width: 90%;         /* makes it wider relative to screen */
-  max-width: 1400px;  /* controls max size on big screens */
-  min-height: 750px;  /* makes it taller */
+  width: 90%;     
+  max-width: 1400px;  
+  min-height: 750px;  
 	min-width: 1250px;
-
-  margin: 60px auto;  /* centers it */
-
-  padding: 60px;      /* safe spacing for text */
-
+  margin: 60px auto;  
+  padding: 60px;     
   color: white;
   border-radius: 10px;
+	text-align: left;
 }
 
+.page-container-intro h1 {
+  font-size: 3rem;
+}
+
+.page-container-intro h3 {
+	font-family: "Roboto Slab";
+}
+
+.download-button-row {
+  display: flex;
+  align-items: center;
+}
+
+.download-button-row h3 {
+  margin: 0;
+}
+
+.slides-btn {
+  margin-left: 100px;       /* pushes ONLY the button right */
+  background-color: #023cb1;
+  color: white;
+  padding: 6px 12px;       /* smaller, normal button */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;   /* prevents stretching */
+}
+
+.slides-btn:hover {
+  background-color: #7CA6FD;
+color: black;
+}
+
+.text-nextto-button {
+	margin-left: 120px;
+}
+
+.text-extra-space {
+	margin-top: 30px;
+}
 
 @media (max-width: 992px) {
   .page-container-intro {
@@ -1046,6 +1083,12 @@ footer img {
     padding: 40px;
     margin: 40px auto;
   }
+	.slides-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 }
 
 @media (max-width: 576px) {
@@ -1057,4 +1100,45 @@ footer img {
 		min-width: 350px;
     border-radius: 8px;
   }
+	.page-container-intro h1 {
+    font-size: 1.4rem;
+  }
+	
+	.page-container-intro p {
+    font-size: 0.7rem;
+  }
+	.line-css-2 {
+  border: none;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 1;
+  width: 100%;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+	.page-container-intro h3 {
+	font-size: 1rem;
+}
+	.slides-btn {
+  margin-left: 20px;       /* pushes ONLY the button right */
+		font-size: 0.6rem;
+}
+	.download-button-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+	.slides-btn-mobile{
+		align-items: left;
+	}
+	.slides-btn {
+  margin-left: 0;
+}
+
+.text-nextto-button {
+  margin-left: 0;
+	font-size: 0.7rem;
+}
 }
