@@ -1479,6 +1479,13 @@ color: white;
   text-shadow: 0 0 6px rgba(124,166,253,0.6);
 }
 
+.directory-info .neon {
+	font-family: "Roboto Slab";
+	color: #8ab4ff;
+	font-weight: 600;
+  text-shadow: 0 0 8px #7CA6FD, 0 0 20px #023cb1;
+}
+
 .directory-info .role {
   font-size: 12px;
   font-style: italic;
@@ -1510,3 +1517,49 @@ color: white;
   color: #ffffff;
 }
 
+.email-link-photo {
+  color: inherit;
+  text-decoration: none;
+}
+
+.email-link-photo:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px){
+.directory-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+}
+
+@media (max-width: 567px){
+.directory-photo {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+	.directory-info h5 {
+  font-size: 12px;
+}
+	.directory-info .role {
+  font-size: 10px;
+}
+
+.directory-info .email {
+  font-size: 10px;
+}
+	
+	.directory-info li {
+  font-size: 10px;
+}
+
+.directory-info .questions {
+  font-size: 11px;
+}
+}
