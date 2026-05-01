@@ -1577,3 +1577,74 @@ color: white;
 	font-size: 1rem;
 }
 }
+
+/*============================================================SPECIALISATION PAGES ==================*/
+.uploader-name{
+	margin-left: 150px;
+}
+
+.specialism-btn-download{
+	padding: 8px 40px;
+}
+
+.text-extra-space-2 {
+	margin-top: 30px;
+}
+
+.download-button-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 0;
+  flex-wrap: wrap; /* prevents overflow issues */
+}
+
+.text-extra-space-3 {
+	margin-top: 20px;
+}
+
+.download-button-row {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+
+  .download-button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    height: 100%; /* forces equal height behavior */
+  }
+
+  .slides-btn,
+  .text-nextto-button,
+  .uploader-name {
+    margin-left: 0 !important;
+  }
+
+  /* IMPORTANT: forces Bootstrap columns to stretch equally */
+  .col-md-6 {
+    display: flex;
+  }
+	
+	.text-extra-space-2 {
+	margin-top: 0px;
+}
+	.uploader-name {
+		font-size: 12px;
+	}
+
+}
+
+.upload-date {
+	margin-left: 120px;
+		font-size: 0.7rem;
+
+}
+
+@media (max-width: 567px){
+	.specialism-btn-download{
+	font-size: 0.6rem;
+}
+}
