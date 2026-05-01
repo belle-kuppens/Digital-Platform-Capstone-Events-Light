@@ -1094,6 +1094,15 @@ color: black;
 	margin-left: 20px;
 }
 
+.intro-page .intro-slide-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 11px;
+	margin: 15px;
+	margin-left: 0px;
+}
+
 .summary-text-space{
 margin-bottom: 50px;
 }
@@ -1368,7 +1377,7 @@ color: white;
 .questions-center-low a {
   font-size: 16px;
   font-family: "Roboto";
-  color: #7ca6fd;
+  color: white;
   text-decoration: none;
 }
 
@@ -1377,7 +1386,7 @@ color: white;
 }
 
 .questions-center-low a:hover {
-  color: #0066FF;
+  color: #7CA6FD;
 }
 
 
@@ -1607,6 +1616,30 @@ color: white;
   width: 100%;
 }
 
+/* HEADER ROW: title + button */
+.sharing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BUTTON STYLE (same style language as your site) */
+.sharing-btn {
+  background-color: #7CA6FD;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap; /* prevents weird wrapping */
+}
+
+.sharing-btn:hover {
+  background-color: #0066FF;
+  color: white;
+}
+
 @media (max-width: 992px) {
 
   .download-button-row {
@@ -1635,16 +1668,75 @@ color: white;
 		font-size: 12px;
 	}
 
+  .sharing-header {
+    flex-direction: column;
+    align-items: flex-start; /* keeps it left-aligned like your design */
+    gap: 0px;
+  }
+	.specialism-btn-download{
+		margin-left: 10px;
 }
-
-.upload-date {
-	margin-left: 120px;
-		font-size: 0.7rem;
-
+	.page-container-intro h1 {
+  font-size: 2.5rem;
+}
 }
 
 @media (max-width: 567px){
 	.specialism-btn-download{
 	font-size: 0.6rem;
 }
+	.page-container-intro h1 {
+  font-size: 1.5rem;
+}
+	.page-container-intro .sharing-btn {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+}
+
+  /* ONLY affects this section */
+  .container .download-button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* center each Bootstrap column ONLY when it contains this block */
+  .container .download-button-row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+.sharing-btn-white-neon {
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap; /* prevents weird wrapping */
+}
+
+.sharing-btn-white-neon:hover {
+  background-color: #0066FF;
+  color: white;
+}
+
+.sharing-btn-white-lblue {
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap; /* prevents weird wrapping */
+}
+
+.sharing-btn-white-lblue:hover {
+  background-color: #7CA6FD;
+  color: black;
 }
