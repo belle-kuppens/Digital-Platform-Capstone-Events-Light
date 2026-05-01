@@ -112,6 +112,7 @@ header {
     background-color: #023CB1;
     border: none;
     color: white;
+	font-weight: 700;
 }
 
 .search-btn:hover {
@@ -1066,6 +1067,7 @@ footer img {
   border-radius: 5px;
   font-size: 14px;
   display: inline-block;   /* prevents stretching */
+	font-weight: 700;
 }
 
 .slides-btn:hover {
@@ -1127,6 +1129,7 @@ margin-bottom: 50px;
   font-size: 14px;
   display: inline-block;   /* prevents stretching */
 	margin-bottom: 30px;
+	font-weight: 700;
 }
 
 .video-btn-low:hover {
@@ -1301,3 +1304,124 @@ color: white;
 .download-button-row {
   margin-bottom: 30px;
 }
+
+/*=================================================BEGIN TRAINING COURSES PAGE ==========================*/
+/* GRID LAYOUT */
+.image-grid {
+  display: grid;
+  gap: 40px 30px; /* vertical / horizontal spacing */
+}
+
+/* CARD */
+.training-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* TEXT + BUTTON ROW */
+.training-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+	margin-left: 10px;
+}
+
+/* TEXT */
+.training-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.training-text p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #dcdcdc;
+}
+
+/* BUTTON */
+.training-btn {
+  background-color: #7fa2e6;
+  color: #000;
+  border: none;
+  padding: 6px 60px;;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 80px;
+  text-align: center;
+}
+
+
+.questions-center-low h4 {
+	font-size: 18px;
+	font-family: "Roboto";
+		margin-top: 80px;
+	text-align: center;
+}
+
+.questions-center-low a {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #7ca6fd;
+  text-decoration: none;
+}
+
+.questions-center-low {
+  text-align: center;
+}
+
+.questions-center-low a:hover {
+  color: #0066FF;
+}
+
+
+@media (max-width: 992px) {
+  .training-btn {
+    padding: 6px 20px;
+    font-size: 16px;
+    min-width: 60px;
+  }
+	.training-text h3 {
+    font-size: 16px;
+  }
+
+  .training-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 567px) {
+  .training-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+    min-width: 60px;
+  }
+
+  .training-text h3 {
+    font-size: 14px;
+  }
+
+  .training-text p {
+    font-size: 12px;
+  }
+	
+	.questions-center-low h4 {
+	font-size: 14px;
+	font-family: "Roboto";
+		margin-top: 80px;
+	text-align: center;
+}
+
+.questions-center-low a {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #7ca6fd;
+  text-decoration: none;
+}
+	}
