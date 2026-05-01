@@ -1526,6 +1526,17 @@ color: white;
   text-decoration: underline;
 }
 
+.subtitle-photo-directory {
+	font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .directory-title .subtitle {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
 @media (max-width: 992px){
 .directory-photo {
   width: 100%;
@@ -1561,5 +1572,8 @@ color: white;
 
 .directory-info .questions {
   font-size: 11px;
+}
+	.subtitle-photo-directory {
+	font-size: 1rem;
 }
 }
