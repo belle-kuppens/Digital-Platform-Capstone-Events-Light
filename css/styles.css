@@ -1867,6 +1867,7 @@ color: white;
   font-size: 0.9rem;
   color: #ccc;
   margin: 0;
+	font-style: italic;
 }
 
 /* BUTTON */
@@ -1890,7 +1891,7 @@ color: white;
 }
 
 .status.updated {
-  color: orange;
+  color: orangered;
   font-weight: 700;
 }
 
@@ -1901,4 +1902,19 @@ color: white;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end; /* makes it sit on same baseline feel */
+}
+
+.upload-date{
+	font-style: italic;
+}
+
+.text-extra-space-5{
+	margin-top: -15px;
+}
+
+@media (max-width: 992px){
+	.workschedule-btn{
+		padding: 4px 10px;
+		font-size: 0.9rem;
+	}
 }
