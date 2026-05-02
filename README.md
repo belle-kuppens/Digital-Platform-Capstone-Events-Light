@@ -11,4 +11,4 @@ The platform focuses on layout and structure instead of content. Each piece of c
 The project is published at <https://belle-kuppens.github.io/Digital-Platform-Capstone-Events-Light/>
 
 ### Design Choices
-All design choices are justified and explained in detail in the Design Document: CB_2526_Capstone_DesignDocument_EventsLight
+All design choices are justified and explained in detail in the Design Document: BelleKuppens_221155_DesignDoc
