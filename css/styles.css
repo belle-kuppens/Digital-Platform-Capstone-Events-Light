@@ -1425,9 +1425,6 @@ color: white;
 
 /*==================================================BEGIN PHOTO DIRECTORY TEAM ======================*/
 
-/* =========================
-   PHOTO DIRECTORY (FIXED 4x3 LAYOUT)
-========================= */
 
 /* WRAPPER (controls spacing between rows) */
 .directory-wrapper {
@@ -1496,6 +1493,12 @@ color: white;
   color: #cccccc;
 }
 
+
+.directory-stacked-contacts .email a {
+  display: block;
+  margin-bottom: 2px;
+}
+
 .directory-info .questions {
   font-size: 12px;
   color: #8ab4ff;
@@ -1525,6 +1528,10 @@ color: white;
 
 .subtitle-photo-directory {
 	font-size: 2rem;
+}
+
+.contact-icon-2 {
+  color: #7CA6FD;
 }
 
 @media (max-width: 1200px) {
@@ -2016,10 +2023,13 @@ color: white;
   vertical-align: middle;
 }
 
-.email,
-.phone-number {
+.email-questions,
+.phone-number-questions {
   display: flex;
   align-items: center;
+	margin: 0px;
+	margin-bottom: 5px;
+	font-size: 0.8rem;
 }
 
 .text-extra-space-6 {
