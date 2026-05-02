@@ -1534,6 +1534,10 @@ color: white;
   color: #7CA6FD;
 }
 
+.contact-icon-3 {
+  color: #0066FF;
+}
+
 @media (max-width: 1200px) {
   .directory-title .subtitle {
     display: block;
@@ -1635,6 +1639,12 @@ color: white;
   color: white;
 }
 
+/* default (desktop): keep inline */
+.title-break {
+  display: inline;
+}
+
+
 @media (max-width: 992px) {
 
   .download-button-row {
@@ -1643,6 +1653,10 @@ color: white;
     align-items: flex-start;
     gap: 8px;
     height: 100%; /* forces equal height behavior */
+  }
+	
+	.title-break {
+    display: block;
   }
 
   .slides-btn,
@@ -1700,6 +1714,9 @@ color: white;
   .container .download-button-row {
     margin-left: auto;
     margin-right: auto;
+  }
+	.title-break {
+    display: block;
   }
 
 }
