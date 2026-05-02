@@ -2021,3 +2021,46 @@ color: white;
   display: flex;
   align-items: center;
 }
+
+.text-extra-space-6 {
+  white-space: nowrap;
+	margin-top: 50px;
+}
+
+.faq-btn {
+  font-size: 14px;;
+  padding: 6px 10px;
+  width: fit-content;
+  display: inline-block;
+  white-space: nowrap;
+	margin-left: 15px;
+}
+
+.text-higher{
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+@media (max-width: 992px){
+	.text-higher{
+		font-size: 1.2rem;
+		margin-top: 10px;
+	}
+	
+	.faq-btn{
+		margin-right: 30px;
+	}
+		
+}
+
+@media (max-width: 567px){
+	.text-higher{
+		font-size: 1.5rem;
+		margin-top: 0px;
+	}
+	
+	.faq-btn{
+		margin-bottom: 20px;
+		margin-left: 10px;
+	}
+}
