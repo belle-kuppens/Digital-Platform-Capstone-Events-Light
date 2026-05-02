@@ -2,6 +2,7 @@
 
 ### Made by Belle Kuppens
 This platform is lightly adapted from the BUas PRJ4 Brand Development Group Website Template.
+
 Profile: https://github.com/buas-media-interactive/prj4-group-template
 Template Website: https://buas-media-interactive.github.io/prj4-group-template
 
