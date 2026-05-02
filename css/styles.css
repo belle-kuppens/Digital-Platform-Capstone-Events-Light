@@ -477,6 +477,10 @@ header {
 	margin-bottom: 60px;
 }
 
+.extra-space-left{
+	margin-left: 20px;
+}
+
 .page-links-btn:hover {
   background-color: #7CA6FD;
   color: #000;
@@ -1739,4 +1743,162 @@ color: white;
 .sharing-btn-white-lblue:hover {
   background-color: #7CA6FD;
   color: black;
+}
+
+/*========================================================================PRODUCTIONS PAGE=================*/
+
+.text-extra-space-4{
+	margin-top: 10px;
+}
+
+.smaller-text{
+	font-size: 0.7rem;
+}
+
+.directory-photo-2 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 0%; /* adjust this */
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Default (desktop/tablet): keep inline */
+.mobile-break-text {
+  display: inline;
+}
+
+@media (max-width: 992px){
+.directory-photo-2 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+	.productions-btn {
+	padding: 4px 10px;
+		font-size: 0.65rem;
+}
+}
+
+@media (max-width: 567px){
+.directory-photo-2 {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+	.productions-btn {
+	padding: 4px 10px;
+		font-size: 0.6rem;
+}
+	 .mobile-break-text {
+    display: block; /* forces it onto a new line */
+    margin-top: 5px; /* optional spacing */
+  }
+}
+
+/*=======================================================================REPORT DEFECTS AND MATERIAL PAGE================*/
+
+.sharing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .sharing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100%;
+  }
+
+  .sharing-header h1,
+  .sharing-header a {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 567px) {
+  .sharing-header {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+/*=======================================================================FINAL WORK SCHEDULES PAGE ===================*/
+
+.schedules-container {
+  color: white;
+}
+
+/* TITLE */
+.schedules-title {
+  font-family: "Roboto Slab";
+  font-size: 2.5rem;
+}
+
+/* ROW SPACING */
+.schedule-row {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* HEADER */
+.schedule-header {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.production-name {
+  font-weight: 700;
+  color: #a8c5ff;
+  text-shadow: 0 0 6px rgba(124,166,253,0.6);
+  margin: 0;
+}
+
+.time-period {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
+
+/* BUTTON */
+.schedule-btn {
+  background-color: #023CB1;
+  color: white;
+  font-weight: 600;
+  padding: 6px 20px;
+  border-radius: 6px;
+}
+
+.schedule-btn:hover {
+  background-color: #7CA6FD;
+  color: black;
+}
+
+/* STATUS */
+.status.final {
+  color: #00ff00;
+  font-weight: 700;
+}
+
+.status.updated {
+  color: orange;
+  font-weight: 700;
+}
+
+.status-right {
+  text-align: right;
+  padding-right: 0;
+	margin-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* makes it sit on same baseline feel */
 }
