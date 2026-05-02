@@ -219,13 +219,6 @@ header {
   color: white;
 }
 
-
-
-
-
-
-
-
 /* News Carousel */
 .news-carousel {
   background-color: #143E77;
@@ -487,9 +480,6 @@ header {
   transform: translateY(-2px);
 }
 
-
-
-
 /* Footer CSS */
 
 .footer{
@@ -546,12 +536,6 @@ footer img {
   gap: 3px;
 }
 
-
-
-/* =========================
-   RESPONSIVE NAVBAR STACK
-   (Laptop stays untouched)
-========================= */
 
 /* TABLET + MOBILE */
 @media (max-width: 992px) {
@@ -1915,6 +1899,125 @@ color: white;
 @media (max-width: 992px){
 	.workschedule-btn{
 		padding: 4px 10px;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
+}
+
+@media (max-width: 567px) {
+
+  /* production title */
+  .production-name {
+    font-size: 0.95rem;
+  }
+
+  /* time period under title */
+  .time-period {
+    font-size: 0.75rem;
+  }
+
+  /* upload date column */
+  .upload-date {
+    font-size: 0.6rem;
+	  margin-top: 3px;
+  }
+
+  /* optional: tighten spacing */
+  .schedule-row {
+    padding: 10px 0;
+  }
+
+  /* turn each column into a block */
+  .schedule-row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  /* spacing fix so it doesn't look cramped */
+  .schedule-row {
+    padding: 12px 0;
+  }
+
+  /* make button take proper space */
+  .workschedule-btn {
+    display: inline-block;
+	  font-size: 0.6rem;
+	  margin-top: 0px;
+  }
+	.status{
+		font-size: 0.6rem;
+		margin-top: 0px;
+	}
+}
+
+/*=========================================================================QUESTIONS & CONTACT PAGE===============*/
+.directory-info .neon-light {
+	font-family: "Roboto";
+	color: white;
+  text-shadow: 0 0 8px #7CA6FD, 0 0 20px #023cb1;
+	font-size: 1.3rem;
+}
+
+.role-blue {
+  font-size: 0.8rem;
+  font-style: italic;
+	font-family: "Roboto Slab";
+	color: #8ab4ff;
+	font-weight: 600;
+  text-shadow: 0 0 8px #7CA6FD, 0 0 20px #023cb1;
+	margin-bottom: 0px;
+}
+
+.directory-info .email {
+  font-size: 12px;
+  margin-bottom: 0px;
+  color: #cccccc;
+}
+
+.phone-number {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: white;
+	margin-top: 0px;
+}
+
+.directory-info .questions {
+  font-size: 12px;
+  color: #8ab4ff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.directory-info ul {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.directory-info li {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #ffffff;
+}
+
+.phone-link-photo {
+  color: inherit;
+  text-decoration: none;
+}
+
+.phone-link-photo:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  color: #0066ff;
+  margin-right: 8px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.email,
+.phone-number {
+  display: flex;
+  align-items: center;
 }
