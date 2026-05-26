@@ -132,7 +132,9 @@
 <hr class="line-css-2 line-css-3 mb-4">
 
 <div class="container-fluid px-0">
-  <div class="row row-cols-2 row-cols-md-4 g-4">
+  
+	<!-- ROW 1 (3 items) -->
+<div class="row g-4 mb-4">
 
     <!-- 1 -->
     <div class="col">
@@ -220,6 +222,10 @@
         </div>
       </div>
     </div>
+	</div>
+	
+	<!-- ROW 2 (4 items) -->
+<div class="row g-4">
 
     <!-- 4 -->
     <div class="col">
@@ -337,34 +343,6 @@
       </div>
     </div>
 
-    <!-- 8 -->
-    <div class="col">
-      <div class="directory-card">
-        <div class="directory-info">
-          <h5 class="neon-light">NAME</h5>
-          <p class="role-blue">ROLE</p>
-          <p class="email-questions">
-  <i class="bi bi-envelope contact-icon"></i>
-  <a href="mailto:prototype@email.nl" class="email-link-photo">
-    prototype@email.nl
-  </a>
-</p>
-
-<p class="phone-number-questions">
-  <i class="bi bi-whatsapp contact-icon"></i>
-  <a href="tel:+31612345678" class="phone-link-photo">
-    +31 6 12 34 56 78
-  </a>
-</p>
-          <p class="questions neon">ASK ME ABOUT:</p>
-          <ul>
-            <li>ADD TOPIC</li>
-            <li>ADD TOPIC</li>
-            <li>ADD TOPIC</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
    <h1 class="text-extra-space-6">GENERAL FAQ.</h1>
 		  <hr class="line-css-2 line-css-3 mb-2">
@@ -377,8 +355,9 @@
   <p>Browse through this platform</p>
 </div>
   </div>
-</div>	
-  </main>
+	
+	  </div>
+		</main>
 
 </body>
     <!-- Hero section END -->
@@ -424,6 +403,25 @@
 </footer>
 	  
 	<!-- Footer END -->  
-	  
+	    <script>
+document.querySelectorAll('.submenu-toggle').forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    let submenu = this.parentElement;
+
+    // Close other open submenus
+    document.querySelectorAll('.dropdown-submenu').forEach(function(item) {
+      if (item !== submenu) {
+        item.classList.remove('show');
+      }
+    });
+
+    // Toggle current submenu
+    submenu.classList.toggle('show');
+  });
+});
+</script>
   </body>
 </html>
