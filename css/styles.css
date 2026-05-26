@@ -2173,6 +2173,21 @@ color: white;
 	margin-left: 50px;
 }
 
+.smaller-text-3{
+	font-size: 0.8rem;
+}
+
+.policy-row {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 4px !important;
+}
+
+.policy-row h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 
 /* ======================================================
    MOBILE
@@ -2292,4 +2307,46 @@ color: white;
     line-height: 1.2;
 	  border-radius: 6px;
   }
+}
+
+@media (max-width: 576px) {
+
+  /* 1. Center the whole section */
+  .contact-center-mobile {
+    text-align: center;
+  }
+
+  /* 2. FORCE Bootstrap rows to center their columns */
+  .contact-center-mobile .row {
+    justify-content: center !important;
+  }
+
+  /* 3. Make columns behave properly when centered */
+  .contact-center-mobile .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* 4. Ensure cards don't stay left-aligned inside columns */
+  .contact-center-mobile .directory-card {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+
+  /* 5. Fix inner spacing consistency */
+  .contact-center-mobile h1,
+  .contact-center-mobile h3,
+  .contact-center-mobile h5,
+  .contact-center-mobile p,
+  .contact-center-mobile span,
+  .contact-center-mobile ul {
+    text-align: center;
+  }
+
+  /* 6. Prevent Bootstrap flex items from sticking left */
+  .contact-center-mobile .row > * {
+    display: flex;
+    justify-content: center;
+  }
+
 }
