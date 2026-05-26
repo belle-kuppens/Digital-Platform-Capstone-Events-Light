@@ -280,6 +280,25 @@
 </footer>
 	  
 	<!-- Footer END -->  
-	  
+	  <script>
+document.querySelectorAll('.submenu-toggle').forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    let submenu = this.parentElement;
+
+    // Close other open submenus
+    document.querySelectorAll('.dropdown-submenu').forEach(function(item) {
+      if (item !== submenu) {
+        item.classList.remove('show');
+      }
+    });
+
+    // Toggle current submenu
+    submenu.classList.toggle('show');
+  });
+});
+</script>
   </body>
 </html>
