@@ -1859,6 +1859,24 @@ color: white;
   margin-bottom: 10px;
 }
 
+.highlight-gr {
+  background-color: #27E500;
+	color: black !important;
+	font-weight: 700 !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline;
+}
+
+.highlight-or {
+  background-color: #ff751f;
+	color: black !important;
+	font-weight: 700 !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline;
+}
+
 /* Default (desktop/tablet): keep inline */
 .mobile-break-text {
   display: inline;
