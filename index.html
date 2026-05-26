@@ -52,7 +52,7 @@
 
     <!-- PROTOCOLS SUBMENU -->
     <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">
+      <a class="dropdown-item dropdown-toggle submenu-toggle" href="#">
         Protocols
       </a>
 
@@ -180,7 +180,7 @@
           <img src="images/newsitems/premierbacktothefuture.jpg" class="card-img-top" alt="Placeholder Image">
           <div class="card-body text-start">
             <h5 class="card-title">PREMIER OF BACK TO THE FUTURE!</h5>
-            <p class="card-text">Sunday, March 22nd was the premiere of Back in the Future in Hamburg. We at Events Light were represented by our colleague Jasper. He was present to set up the entire Follow-Me Tracking system. #BehindtheFollow-Me. We are super proud of his achievement and wish the cast and crew lots of luck🏫⚡️🚙!</p>
+            <p class="card-text">Sunday, March 22nd was the premiere of Back in the Future in Hamburg. We at Events Light were represented by our colleague Jasper to set up the entire Follow-Me Tracking system. We are super proud of his achievement and wish the cast and crew lots of luck🏫⚡️🚙!</p>
           </div>
           <div class="card-footer text-start news-date">
             19th May 2026
@@ -301,7 +301,7 @@
 		  <div class="container text-white content-layer page-links-titles">
     <h2>DEFECT MATERIALS?</h2>
 			  <hr class="line-css-2">
-    <p>Check out the Report Defects page!</p>
+    <p>Check out what to do on the Defective Material page!</p>
 			  <a href="reportdefects.html" class="page-links-btn">Go to the page</a>
   </div>
 </section>	   
@@ -349,6 +349,25 @@
 </footer>
 	  
 	<!-- Footer END -->  
-	  
+	  <script>
+document.querySelectorAll('.submenu-toggle').forEach(function(element) {
+  element.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    let submenu = this.parentElement;
+
+    // Close other open submenus
+    document.querySelectorAll('.dropdown-submenu').forEach(function(item) {
+      if (item !== submenu) {
+        item.classList.remove('show');
+      }
+    });
+
+    // Toggle current submenu
+    submenu.classList.toggle('show');
+  });
+});
+</script>
   </body>
 </html>
