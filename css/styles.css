@@ -1537,6 +1537,14 @@ color: white;
   transform: translateY(-5px);
 }
 
+.report-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+	font-size: 1.3rem;
+}
+
+
 /* IMAGE */
 .directory-photo {
   width: 100%;
@@ -1869,7 +1877,7 @@ color: white;
 }
 
 .highlight-or {
-  background-color: #27E500;
+  background-color: #ff751f;
 	color: black !important;
 	font-weight: 700 !important;
   padding: 2px 6px;
@@ -2306,47 +2314,6 @@ color: white;
     padding: 5px 12px !important;
     line-height: 1.2;
 	  border-radius: 6px;
-  }
-}
-
-@media (max-width: 576px) {
-
-  /* 1. Center the whole section */
-  .contact-center-mobile {
-    text-align: center;
-  }
-
-  /* 2. FORCE Bootstrap rows to center their columns */
-  .contact-center-mobile .row {
-    justify-content: center !important;
-  }
-
-  /* 3. Make columns behave properly when centered */
-  .contact-center-mobile .col {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* 4. Ensure cards don't stay left-aligned inside columns */
-  .contact-center-mobile .directory-card {
-    margin: 0 auto !important;
-    text-align: center;
-  }
-
-  /* 5. Fix inner spacing consistency */
-  .contact-center-mobile h1,
-  .contact-center-mobile h3,
-  .contact-center-mobile h5,
-  .contact-center-mobile p,
-  .contact-center-mobile span,
-  .contact-center-mobile ul {
-    text-align: center;
-  }
-
-  /* 6. Prevent Bootstrap flex items from sticking left */
-  .contact-center-mobile .row > * {
-    display: flex;
-    justify-content: center;
   }
 
 }
