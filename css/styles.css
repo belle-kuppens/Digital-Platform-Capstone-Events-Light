@@ -405,6 +405,7 @@ header {
   padding-right: 12px;
 }
 
+
 .page-links {
   position: relative;
   background-color: #000;
@@ -632,6 +633,12 @@ footer img {
   .social-icons i {
     font-size: 26px;
   }
+
+  .news-card {
+    max-height: none !important;
+    height: auto !important;
+  }
+
 
 .footer-logo {
   max-height: 120px;
@@ -972,7 +979,7 @@ footer img {
     height: 120px;      
   }
 
-  /* Reduce overall card “feel” via content */
+  /* Reduce overall card via content */
   .news-card .card-body {
     padding: 10px;
   }
