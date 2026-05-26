@@ -1920,6 +1920,10 @@ color: white;
     display: block; /* forces it onto a new line */
     margin-top: 5px; /* optional spacing */
   }
+	
+	.smaller-text-4{
+		font-size:1.4rem !important;
+	}
 }
 
 /*=======================================================================REPORT DEFECTS AND MATERIAL PAGE================*/
