@@ -9,11 +9,11 @@ Template Website: https://buas-media-interactive.github.io/prj4-group-template
 
 
 ### About the platform
-The platform focuses on layout and structure instead of content. Each piece of content, whether it's text, images, videos, or contact information, is replaced with a placeholder that is adjustable to the final piece of content once the digital platform starts its completion process by Events Light. Attached to the project folder is a document named 'Digital_Platform_Placeholder_Justifications' where each needed alteration, before the platform is complete, is listed.
+Its purpose is to provide a to-the-point framework that can be used by Events Light for further development. Because this platform will ultimately contain company-confidential information, which Events Light wants to keep that way, not all content is filled in or attached yet. However, those pieces of content that are missing, together with the department that will be filling them in once this project is handed in, are part of the Maintenance Plan attached in Appendix B7 of the Advisory Report. Lastly, the search bar is currently not functional, but this will be tackled by the IT-specialist, as stated in the Maintenance Plan.
 
 ### See the platform!
 
 The project is published at <https://belle-kuppens.github.io/Digital-Platform-Capstone-Events-Light/>
 
 ### Design Choices
-All design choices are justified and explained in detail in the Design Document: BelleKuppens_221155_DesignDoc
+All design choices are justified and explained in detail within the Advisory Report.
